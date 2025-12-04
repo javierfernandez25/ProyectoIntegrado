@@ -62,8 +62,6 @@ export async function actualizarEncuesta(req, res) {
   try {
     const { id } = req.params;
     
-    // findByIdAndUpdate es la forma moderna de actualizar por _id
-    // { new: true } hace que te devuelva el objeto ya modificado
     const encuestaActualizada = await Encuesta.findByIdAndUpdate(id, req.body, { new: true });
 
     if (!encuestaActualizada) return res.status(404).json({ error: "No encontrada" });

@@ -31,5 +31,5 @@ const RespuestaDetalleSchema = new mongoose.Schema({
 export default mongoose.model(
   "RespuestaDetalle",
   RespuestaDetalleSchema,
-  "respuestasdetalle"   // <-- aquí va el nombre EXACTO de tu colección en Atlas
+  "respuestasdetalle"  
 );
