@@ -7,7 +7,7 @@ const EncuestaSchema = new mongoose.Schema({
     required: [true, "El título es obligatorio"] 
   },
   
-  // Descripción: OPCIONAL (coincide con Angular)
+  
   descripcion: { 
     type: String 
   }, 
@@ -18,7 +18,6 @@ const EncuestaSchema = new mongoose.Schema({
     default: Date.now 
   },
   
-  // Anónima: DEFECTO FALSE
   es_anonima: { 
     type: Boolean, 
     default: false 
